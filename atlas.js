@@ -64,8 +64,8 @@ function displayCountry(country) {
 
     resultCard.innerHTML = `
         <img src="${country.flags.svg}" alt="Flag" class="w-40 mx-auto mb-4 border shadow-sm">
-        <h2 class="text-3xl font-bold mb-2 text-blue-900">${country.name.common}</h2> <div class="text-left space-y-3 mt-6 text-gray-700">
-            <h3 class="font-bold border-b pb-1 text-blue-700">Basic Information</h3>
+        <h2 class="text-3xl font-bold mb-2 text-orange-400">${country.name.common}</h2> <div class="text-left space-y-3 mt-6 text-gray-700">
+            <h3 class="font-bold border-b pb-1 text-orange-300">Country Portfolio</h3>
             <p><strong>Capital:</strong> ${capital}</p>
             <p><strong>Population:</strong> ${population}</p>
             <p><strong>Region:</strong> ${country.region} / ${country.subregion}</p>
@@ -74,4 +74,3 @@ function displayCountry(country) {
             <p><strong>Traditional Clothing:</strong> ${culture.cloth}</p>
     `;
 }
-
