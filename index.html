@@ -9,10 +9,13 @@
 <body class="bg-yellow-200 min-h-screen p-5 flex flex-col items-center">
     <h1 class="text-4xl font-bold text-orange-400 mb-8">The Search Atlas</h1>
     <div class="flex gap-2 mb-10 w-full max-w-md">
-        <input type="text" id="countryInput" class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-blue-500">
+        <input type="text" id="countryInput" autocomplete="off" class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-blue-500">
         <button id="Btn" class="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:scale-105 transition">
             Search
         </button>
+        </div>
+        <div id="suggestionBox" class="bg-white max-h-[300px] overflow-y-auto rounded-b-lg shadow-lg absolute top-full w-full z-50">
+        </div>
     </div>
 
     <div id="resultCard" class="hidden w-full max-w-lg bg-yellow-100 p-8 rounded-2xl shadow-xl text-center">
